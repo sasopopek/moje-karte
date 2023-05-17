@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(f1back.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.kvadrat {
+    margin: 60px auto;
+    width: 43%;
+    height: 360px;
+    border: 5px solid rgba(0,139,187,255);
+    border-radius: 10px;
+    background-color: rgba(218, 218, 218, 0.8);
+    
+}
+
+input[type=text] {
+    text-align: left;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 3px solid rgb(173, 173, 173);
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    text-align: left;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 3px solid rgb(173, 173, 173);
+    outline: none;
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+    border-radius: 5px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,139,187,255);
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial;
+    text-align: center;
+
+}
+
+p {
+    font-family: Arial;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(0,139,187,255);
+    color: white;
+    border-radius: 5px;
+}
+
+.align {
+    text-align: center;
+}
+
+.gumb{
+    margin-top: 40px;
+    text-align: center;
+}

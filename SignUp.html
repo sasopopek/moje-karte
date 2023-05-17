@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <title>Moje karte</title>
+    <link rel="stylesheet" type="text/css" href="SignUp.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <img src="moje-karte-logo1.png" alt="Moje karte" class="center">
+    </div>
+    <div class="kvadrat">
+        <h1>Prijavi se!</h1>
+        <form action="Login.html">
+            <p>Email:*</p>
+            <label for="email"></label>
+            <div class="align">
+                <input type="email" id="email" name="email" placeholder="E-mail" required maxlength="40"></inputn>
+            </div>
+            <p>Uporabniško ime:*</p>
+            <label for="username"></label>
+            <div class="align">
+                <input type="text" id="username" name="username" placeholder="Up. ime" required maxlength="20" pattern="[A-Za-z]{2,25}"></inputn>
+            </div>
+            <p>Geslo:*</p>
+            <label for="password"></label>
+            <div class="align">
+                <input type="password" id="password" name="password" placeholder="Geslo" required required maxlength="25"></inputn>
+            </div>
+            <p>Rojstni dan:</p>
+            <label for="birthday"></label>
+            <div class="align">
+                <input type="date" class="date" id="birthday" name="birthday" required></input>
+            </div>
+            <p>
+                Če že imaš račiun se prijavi 
+                <a href="index.html">tukaj</a> .
+            </p>
+            <div class="gumb">
+                <button class="btn btn-primary" onclick="createItem2()" target="blank">PRIJAVA!</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function createItem2() {
+            var inputUsername2 = document.getElementById("username");
+            localStorage.setItem("mojusername2", inputUsername2.value);
+            var inputPassword2 = document.getElementById("password");
+            localStorage.setItem("mojpassword2", inputPassword2.value);
+        }
+    </script>
+</body>
+
+</html>

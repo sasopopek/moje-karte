@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(f1back.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.zahvala {
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+    margin-top: 4%;
+}
+
+p{
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.kvadrat {
+    margin: 60px auto;
+    width: 65%;
+    height: 170px;
+    border: 5px solid rgba(0,139,187,255);
+    border-radius: 10px;
+    background-color: rgba(218, 218, 218, 0.8);
+   
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,139,187,255);
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgba(0,139,187,255);
+    border-radius: 5px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.gumb1{
+    text-align: center;
+}

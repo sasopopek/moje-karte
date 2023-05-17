@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+
+<head>
+    <title>Mojekarte</title>
+    <link rel="stylesheet" type="text/css" href=" styles.css ">
+    <link rel="icon" type="image/x-icon" alt="mojekarte" href="favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <img src="moje-karte-logo1.png" class="center">
+
+    </div>
+    <div class="kvadrat">
+        <h1>Vstopnice za 2023</h1>
+        <form>
+            <div class="align">
+                <label class="ime" for="fname">Ime:*</label>
+
+                <input type="text" id="fname" name="fname" placeholder="Janez" required maxlength="25">
+            </div>
+            <div class="align">
+                <label class="priimek" for="surname">Priimek:*</label>
+
+                <input type="text" class="surname2" id="surname" name="surname" placeholder="Novak" required maxlength="25">
+            </div>
+            <div class="align">
+                <label for="naslov">Naslov:*</label>
+                <input type="text" id="naslov" name="naslov" placeholder="Ljubljana, Prešernova 10" required maxlength="50">
+            </div>
+            <div class="align">
+                <label for="drzava">Država:*</label>
+
+                <input type="text" id="drzava" name="drzava" placeholder="Slovenija" required maxlength="20">
+            </div>
+            <div>
+
+                <label for="curcit">Izberi izvajalca:</label>
+                <select name="curcit">
+                    <option value="fehtarji">Fehtarji</option>
+                    <option value="zvita_feltna">Zvita feltna</option>
+                    <option value="big_foot_mama">Big foot mama</option>
+                    <option value="joker_out">Joker out</option>
+                    <option value="zmelkoow">Zmelkoow</option>
+                    <option value="sank_rock">Šank rock</option>
+                    <option value="dejan_vunjak">Dejan Vunjak</option>
+                </select>
+            </div>
+        </form>
+        <div class="gumbi">
+            <div class="stojisce">
+                <button class="stojisce" onClick="funkcija1()">STOJIŠČE
+                </button>
+            </div>
+            <div class="sedisce">
+                <button class="sedisce" onClick="funkcija2()">SEDIŠČE
+                </button>
+            </div>
+        </div>
+
+        <div class="cena">
+            <input type="text" id="cena" name="cena" disabled>
+        </div>
+        <div class="check">Nakup!</div>
+        <form action="Zahvala.html">
+            <div class="align">
+                <label class="ime2"for="ime2">Ime:</label>
+                <input type="text" id="ime2" name="ime2" placeholder="Janez Novak" required maxlength="50">
+            </div>
+            <div class="align">
+                <label class="stk" for="stk">Številka kartice:</label>
+                <input type="text" class="cardnumber2" id="cardnumber" name="cardnumber" onkeypress='return event.charCode>=48 && event.charCode<=57' maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+            <div class="align">
+                <label class="date" for="ed">Rok trajanja:</label>
+                <input type="month" class="date2" id="ed" name="ed">
+            </div>
+            <div class="align">
+                <label class="ccv" for="ccv">CCV:</label>
+                <input type="text" class="cvv2" id="ccv" name="ccv" onkeypress='return event.charCode>=48 && event.charCode<=57' maxlength="3" placeholder="XXX" required>
+            </div>
+            <div class="order">
+                <button herf="Zahvala.html" class="btn btn-primary" target="blank">Naroči zdaj!</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function funkcija1() {
+            document.getElementById("cena").value = '15€';
+        }
+
+        function funkcija2() {
+            document.getElementById("cena").value = '25€'
+        }
+    </script>
+</body>
+
+</html>

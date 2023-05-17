@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js%22%3E"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Moje karte</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="moje-karte-logo1.png" alt="Moje karte" class="center">
+    </div>
+    <div class="kvadrat">
+        <h1>Vpis!</h1>
+        <form>
+            <p>Uporabniško ime:</p>
+            <label for="username"></label>
+            <div class="align">
+                <input type="text" id="username" name="username" placeholder="Username" required maxlength="20"></inputn>
+            </div>
+            <p>Geslo:</p>
+            <label for="password"></label>
+            <div class="align">
+                <input type="password" id="password" name="password" placeholder="Password" required maxlength="25"></inputn>
+            </div>
+            <p>
+                Če nimaš še račina klikni
+                <a href="SignUp.html">tukaj</a> .
+            </p>
+            <div class="gumb">
+                <button class="btn btn-primary" onclick="createItem1(); readValue();" target="blank">Vpis!</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function createItem1() {
+            var inputUsername1 = document.getElementById("username");
+            localStorage.setItem("mojusername1", inputUsername1.value);
+            var inputPassword1 = document.getElementById("password");
+            localStorage.setItem("mojpassword1", inputPassword1.value);
+        }
+
+        function readValue() {
+            var i = localStorage.getItem("mojusername1");
+            var j = localStorage.getItem("mojpassword1");
+            var x = localStorage.getItem("mojusername2");
+            var y = localStorage.getItem("mojpassword2");
+
+            if (j == y && i == x) {
+                alert("You are logged in!");
+                window.close();
+                window.open("Obrazec.html");
+                /*swal("Congraculations!", "You are logged in!", "success", {
+                button: "Close",
+
+                });*/
+            } else {
+                alert("Username and password does not match!");
+                returnToPreviousPage;
+                /*swal("Warning!", "Username and password does not match!", "error", {
+                button: "Close",
+
+                });*/
+            }
+        }
+    </script>
+</body>
+
+</html>
